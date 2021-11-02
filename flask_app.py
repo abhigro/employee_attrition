@@ -21,7 +21,7 @@ def form_data():
     dic={}
     for i in attr:
         if (i!="Attrition"):
-            dic[i]=request.form.get(i)
+            dic[i]=int(request.form.get(i))
     
 
     pred=model.predict([list(dic.values())])
