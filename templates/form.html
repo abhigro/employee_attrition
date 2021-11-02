@@ -11,37 +11,115 @@
  
 
         <form action="/submit" method="post">
-            <input type="number" name="Age" placeholder="Age" required="required"/>
-            <input type="number" name="BusinessTravel" placeholder="BusinessTravel in 0,1 or 2" required="required"/>
-            <input type="number" name="DailyRate" placeholder="DailyRate" required="required"/>
-            <input type="number" name="Department" placeholder="Department in 0,1 or 2" required="required"/>
-            <input type="number" name="DistanceFromHome" placeholder="DistanceFromHome" required="required"/>
-            <input type="number" name="Education" placeholder="Education" required="required"/>
-            <input type="number" name="EducationField" placeholder="EducationField in 0,1,2,3,4,5" required="required"/>
-            <input type="number" name="EnvironmentSatisfaction" placeholder="EnvironmentSatisfaction" required="required"/>
-            <input type="number" name="Gender" placeholder="Gender in 0 or 1" required="required"/>
-            <input type="number" name="HourlyRate" placeholder="HourlyRate" required="required"/>
-            <input type="number" name="JobInvolvement" placeholder="JobInvolvement" required="required"/>
-            <input type="number" name="JobLevel" placeholder="JobLevel" required="required"/>
-            <input type="number" name="JobRole" placeholder="JobRole in 0-8" required="required"/>
-            <input type="number" name="JobSatisfaction" placeholder="JobSatisfaction" required="required"/>
-            <input type="number" name="MaritalStatus" placeholder="MaritalStatus in 0,1 or 2" required="required"/>
-            <input type="number" name="MonthlyIncome" placeholder="MonthlyIncome" required="required"/>
+            
+            
+            <label for="BusinessTravel">Choose travel habit:</label>
+                <select name="BusinessTravel" id="BusinessTravel">
+                    <option value=0>Non-Travel</option>
+                    <option value=1>Travel_Frequently</option>
+                    <option value=2>Travel_Rarely</option>
+                </select><br>
 
+            
+            
+            
+            <label for="Department">Choose Department:</label>
+                <select name="Department" id="Department">
+                    <option value=0>Human Resources</option>
+                    <option value=1>Research & Development</option>
+                    <option value=2>Sales</option>
+                </select><br>
+
+            
+            
+            <label for="EducationField">Choose EducationField:</label>
+                <select name="EducationField" id="EducationField">
+                    <option value=0>Human Resources</option>
+                    <option value=1>Life Sciences</option>
+                    <option value=2>Marketing</option>
+                    <option value=3>Medical</option>
+                    <option value=4>Other</option>
+                    <option value=5>Technical Degree</option>
+                </select><br>
+
+            
+            
+
+            <label for="gender">Choose gender:</label>
+                <select name="Gender" id="gender">
+                    <option value=1>Male</option>
+                    <option value=0>Female</option>
+                </select><br>
+
+
+            
+            
+            <label for="JobRole">Choose JobRole:</label>
+                <select name="JobRole" id="JobRole">
+                    <option value=0>Healthcare Representative</option>
+                    <option value=1>Human Resources</option>
+                    <option value=2>Laboratory Technician</option>
+                    <option value=3>Manager</option>
+                    <option value=4>Manufacturing Director</option>
+                    <option value=5>Research Director</option>
+                    <option value=6>Research Scientist</option>
+                    <option value=7>Sales Executive</option>
+                    <option value=8>Sales Representative</option>
+                </select><br>
+            <label for="MaritalStatus">Choose MaritalStatus:</label>
+                <select name="MaritalStatus" id="MaritalStatus">
+                    <option value=0>Divorced</option>
+                    <option value=1>Married</option>
+                    <option value=2>Single</option>
+                </select><br>
+            <label for="OverTime">Choose OverTime:</label>
+                <select name="OverTime" id="OverTime">
+                    <option value=1>No</option>
+                    <option value=0>Yes</option>
+                </select><br>
+            
+            <label for="Education">Choose Education Rating:</label>
+                <select name="Education" id="Education">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    
+                </select><br>
+            <label for="EnvironmentSatisfaction">Choose Envirenment satisfaction rating:</label>
+                <select name="EnvironmentSatisfaction" id="EnvironmentSatisfaction">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    
+                    
+                </select><br>
+                
+            <input type="number" name="Age" placeholder="Age" required="required"/>
+            <input type="number" name="DailyRate" placeholder="DailyRate" required="required"/>
+            <input type="number" name="DistanceFromHome" placeholder="DistanceFromHome" required="required"/>
+            
+            
+            <input type="number" name="HourlyRate" placeholder="HourlyRate" required="required"/>
+            <input type="number" name="JobInvolvement" placeholder="JobInvolvement(1-4)" required="required"/>
+            <input type="number" name="JobLevel" placeholder="JobLevel(1-5)" required="required"/>
+            <input type="number" name="MonthlyIncome" placeholder="MonthlyIncome" required="required"/>
             <input type="number" name="MonthlyRate" placeholder="MonthlyRate" required="required"/>
             <input type="number" name="NumCompaniesWorked" placeholder="NumCompaniesWorked" required="required"/>
-            <input type="number" name="OverTime" placeholder="OverTime in 0 or 1" required="required"/>
+            <input type="number" name="JobSatisfaction" placeholder="JobSatisfaction(1-4)" required="required"/>
             <input type="number" name="PercentSalaryHike" placeholder="PercentSalaryHike" required="required"/>
             <input type="number" name="PerformanceRating" placeholder="PerformanceRating" required="required"/>
             <input type="number" name="RelationshipSatisfaction" placeholder="RelationshipSatisfaction" required="required"/>
-            <input type="number" name="StockOptionLevel" placeholder="StockOptionLevel" required="required"/>
+            <input type="number" name="StockOptionLevel" placeholder="StockOptionLevel(1-4)" required="required"/>
             <input type="number" name="TotalWorkingYears" placeholder="TotalWorkingYears" required="required"/>
             <input type="number" name="TrainingTimesLastYear" placeholder="TrainingTimesLastYear" required="required"/>
-            <input type="number" name="WorkLifeBalance" placeholder="WorkLifeBalance" required="required"/>
+            <input type="number" name="WorkLifeBalance" placeholder="WorkLifeBalance(1-4)" required="required"/>
             <input type="number" name="YearsAtCompany" placeholder="YearsAtCompany" required="required"/>
             <input type="number" name="YearsInCurrentRole" placeholder="YearsInCurrentRole" required="required"/>
             <input type="number" name="YearsSinceLastPromotion" placeholder="YearsSinceLastPromotion" required="required"/>
-            <input type="number" name="YearsWithCurrManager" placeholder="YearsWithCurrManager" required="required"/>
+            <input type="number" name="YearsWithCurrManager" placeholder="YearsWithCurrManager" required="required"/><br>
           
         <button type="submit">Predict</button>
         </form>
